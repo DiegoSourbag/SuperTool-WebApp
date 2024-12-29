@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.10
 
 # download this https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 # copy model to avoid unnecessary download

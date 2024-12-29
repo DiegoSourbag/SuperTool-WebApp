@@ -1,8 +1,8 @@
-flask
+Flask
+rembg
 pillow
 pytubefix
-pathlib
-matplotlib==3.8.4
-demucs
 torch
 torchaudio
+demucs
+pydub
