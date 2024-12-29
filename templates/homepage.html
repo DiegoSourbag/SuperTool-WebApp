@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
+
+
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <h1>Welcome to the SuperTool</h1>
+        <p>Select a tool from the navigation bar or click on the links below to get started:</p>
+        <ul>
+            <li><a href="/rmbg">Remove Background from Images</a></li>
+            <li><a href="/audio_converter">Audio Converter</a></li>
+            <li><a href="/convert">Image Format Converter</a></li>
+            <li><a href="/yt2mp4">YouTube Downloader</a></li>
+            <li><a href="/demucs">Demucs Stem Separator</a></li>
+        </ul>
+    </div>
+</body>
+</html>

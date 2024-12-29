@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demucs Stem Separator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
+
+</head>
+<body>
+  {% include 'navbar.html' %}
+    <div class="container">
+        <h1>Demucs Stem Separator</h1>
+        <form action="/demucs" method="POST" enctype="multipart/form-data">
+            <label for="audio_file">Upload Audio File:</label>
+            <input type="file" id="audio_file" name="audio_file" accept="audio/*" required>
+            <p class="note">Accepted formats: MP3, WAV, FLAC, etc.</p>
+            <button type="submit">Separate Stems</button>
+        </form>
+    </div>
+</body>
+</html>
